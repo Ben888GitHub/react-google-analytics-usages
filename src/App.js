@@ -7,7 +7,7 @@ import ReactGA from 'react-ga';
 import { Routes, Route } from 'react-router-dom';
 import About from './components/About';
 const TRACKING_ID = 'UA-189719752-1';
-ReactGA.initialize(TRACKING_ID);
+ReactGA.initialize(TRACKING_ID); // 1) Enable Google Analytics
 
 const Home = () => (
 	<div>
@@ -17,6 +17,7 @@ const Home = () => (
 
 function App() {
 	useEffect(() => {
+		// 2) Log page view
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);
 	return (
