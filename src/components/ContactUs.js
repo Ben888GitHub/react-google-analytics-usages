@@ -7,12 +7,17 @@ function ContactUs() {
 		<>
 			<h3>Contact Us</h3>
 			<div>
-				<p onClick={() => eventTracker('call action', 'call label')}>Call Us</p>
+				<a href="#" onClick={() => eventTracker('call action', 'call label')}>
+					Call Us
+				</a>
 			</div>
 			<div>
-				<p onClick={() => eventTracker('email action', 'email label')}>
+				<a
+					href="mailto:someone@example.com"
+					onClick={() => eventTracker('email action', 'email label')}
+				>
 					Write to us
-				</p>
+				</a>
 			</div>
 		</>
 	);

@@ -1,5 +1,8 @@
 import './App.css';
 import ContactUs from './components/ContactUs';
+import ReactGA from 'react-ga';
+const TRACKING_ID = 'UA-189719752-1';
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
 	return (
